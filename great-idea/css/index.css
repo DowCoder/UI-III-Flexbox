@@ -64,3 +64,170 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	margin-right: 60px;
+	margin-left: 75px;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 900px;
+	margin: 0 auto;
+
+}
+
+ .navigation {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	position: fixed;
+	background: lime;
+	
+	
+}
+
+ .navigation a {
+	margin: 27px;
+	text-decoration: none;
+	text-align: left;
+	color: black;
+	vertical-align: top;
+	transition: border-bottom .5s ease-in-out;
+}
+.navigation a:hover {
+	border-bottom: 3px solid black;
+	color: black;
+	border-top: 3px solid black;
+}
+
+.navigation .logo{
+	display: flex;
+	justify-content: center;
+
+	
+
+}
+
+header {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+ #main {
+	padding-top: 70px;
+	text-align: center;
+	width: 49.9;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+#main .slogan {
+	font-size: 5rem;
+	text-align: center;
+	margin: 50px 25px 5px 20px;
+	width: 400px; 
+
+	
+ 
+}
+
+div #main button {
+font-size: 18px;
+width: 150px;
+padding: 5px 20px;
+border: 1px solid black;
+background: white;
+
+
+
+}
+
+.logo {
+	margin-left: 40px;
+	
+}
+
+.logo1 {
+	width: 350px;
+	float: right;
+} 
+
+div {
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: space-around;
+	padding: 30px 0px;
+}
+
+div .first-section  {
+	border-top: 1px solid black;
+	padding: 50px 0px;
+	
+}
+ .firts-section .box {
+	
+	width: 50%;
+	/*margin-left: 100px;*/
+	padding: 30px 0px;
+	
+}
+
+.box {
+	width: 90%;
+	padding: 20px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.middle-img {
+	margin: 10px 50px 40px 80px;
+}
+	
+.div1 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.div1 .second-section {
+	padding: 50px 0px;
+	width: 90%;
+	border-bottom: 1px solid black;
+}
+
+
+.second-section .box {
+	
+	width: 90%;
+	padding: 20px 0px;
+	align-items: center;
+	
+}
+
+.paragraph {
+	display: flex;
+	flex-shrink: 30%;
+}
+
+
+address {
+	display: flex;
+	flex-direction: column;
+	/*margin: 0px 10px;
+	padding: 30px;
+	text-align: left;*/
+
+}
+ 
+address p {
+	padding: 20px 0px 20px;
+}
+
+footer {
+	padding: 80px;
+	text-align: center;
+}
