@@ -70,8 +70,7 @@ body {
 	margin-left: 75px;
 }
 .container {
-	display: flex;
-	flex-direction: column;
+	
 	width: 900px;
 	margin: 0 auto;
 
@@ -176,7 +175,7 @@ div .first-section  {
 }
 
 .box {
-	width: 90%;
+	width: 33%;
 	padding: 20px 0px;
 	display: flex;
 	flex-direction: column;
