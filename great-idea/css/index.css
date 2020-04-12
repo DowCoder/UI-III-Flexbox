@@ -66,31 +66,34 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	margin-right: 60px;
-	margin-left: 75px;
+	width: 100vw;
+    
 }
 .container {
 	
-	width: 900px;
-	margin: 0 auto;
-
+	width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+	
 }
+ 
 
  .navigation {
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: center;
-	position: fixed;
-	background: lime;
-	
-	
+	flex-direction: row;
+	justify-content: left;
+	width: 100%;
+	padding-top: 40px;
+	background-color: #2E4053;
+	padding: 1%;
+
 }
 
  .navigation a {
-	margin: 27px;
+	margin: 27px; 
 	text-decoration: none;
-	text-align: left;
-	color: black;
+	text-align: center;
+	color: lightgrey;
 	vertical-align: top;
 	transition: border-bottom .5s ease-in-out;
 }
@@ -99,14 +102,13 @@ body {
 	color: black;
 	border-top: 3px solid black;
 }
-
-.navigation .logo{
-	display: flex;
-	justify-content: center;
-
-	
-
+.logo {
+	position: absolute;
+		right: 5%;
+		top: 2%;
+		margin-left: -5%;
 }
+
 
 header {
 	margin-top: 60px;
@@ -116,111 +118,94 @@ header {
  #main {
 	padding-top: 70px;
 	text-align: center;
-	width: 49.9;
+	width: 65%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	
+	margin-left: 16%;
 }
 
-#main .slogan {
-	font-size: 5rem;
+ .slogan {
+	font-size: 7rem;
 	text-align: center;
-	margin: 50px 25px 5px 20px;
-	width: 400px; 
+	margin-right: 37%;
+	width: 25%; 
+	
 
 	
  
 }
 
-div #main button {
+ button {
 font-size: 18px;
 width: 150px;
 padding: 5px 20px;
 border: 1px solid black;
 background: white;
+margin-right: 25%;
 
 
 
 }
 
-.logo {
-	margin-left: 40px;
-	
-}
+
 
 .logo1 {
-	width: 350px;
+	width: 25%;
 	float: right;
+	position: absolute;
+	right: 20%;
+	top: 13%;
 } 
 
-div {
-	display: flex;
-	flex-flow: row nowrap;
-	align-content: space-around;
-	padding: 30px 0px;
-}
 
-div .first-section  {
-	border-top: 1px solid black;
-	padding: 50px 0px;
-	
+
+ .first-section  {
+    display: flex;
+    border-top: 1px solid black;
+    padding: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+	width: 100%;
 }
- .firts-section .box {
-	
-	width: 50%;
-	/*margin-left: 100px;*/
-	padding: 30px 0px;
-	
-}
+ 
 
 .box {
-	width: 33%;
-	padding: 20px 0px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    width: 32%;
+    padding: 20px 0px;
 }
 
 
 .middle-img {
-	margin: 10px 50px 40px 80px;
+	width: 100%;
 }
 	
-.div1 {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-}
-.div1 .second-section {
-	padding: 50px 0px;
-	width: 90%;
-	border-bottom: 1px solid black;
-}
 
-
-.second-section .box {
-	
-	width: 90%;
-	padding: 20px 0px;
-	align-items: center;
-	
+ .second-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    border-bottom: 1px solid black;
+    
+}
+.box3 {
+    padding-right: 20px;
 }
 
-.paragraph {
-	display: flex;
-	flex-shrink: 30%;
+.box4 {
+    padding-right: 20px; 
 }
 
-
-address {
-	display: flex;
-	flex-direction: column;
-	/*margin: 0px 10px;
-	padding: 30px;
-	text-align: left;*/
-
+.box5 {
+    padding-right: 20px;
 }
+
+.contact {
+	padding-top: 50px;
+	padding-left: 4%;
+}
+
  
 address p {
 	padding: 20px 0px 20px;
@@ -229,4 +214,187 @@ address p {
 footer {
 	padding: 80px;
 	text-align: center;
+}
+@media(max-width: 1200px){
+	.logo1 {
+		display: none;
+	}
+	
+}
+@media(max-width: 800px){
+	body {
+		width: 100vw;
+	}
+	.container {
+		width: 100%;
+	}
+	.top-page {
+		display: flex;
+		justify-content: center;
+	}
+	.navigation {
+		justify-content: center;
+		padding-top: 11%;
+		
+	}
+	
+	#mobile #mobile-0, #mobile-1,
+	#mobile-2, #mobile-3, #mobile-4 {
+		margin: 0px;
+	}
+	
+	
+	
+	header {
+		width: 100%;
+	}
+	.logo {
+		align-items: center;
+		position: absolute;
+		top: 2%;
+		left: 44%;
+		
+	}
+
+	button {
+		margin-right: 2%;
+	}
+	.logo1 {
+		display: none; 
+	}
+	#main {
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.slogan {
+		
+		align-items: center;
+		
+	 }
+
+	 .middle-img {
+		 width: 100%;
+		
+	 }
+	 .box {
+		 width: 100%; 
+		 
+	 }
+	 
+	 .first-section {
+		 width: 100%;
+		 border-top: 2px solid black;
+	 }
+	 .box1 {
+		 padding-right: 40px;
+	 }
+	 .second-section {
+		 border-bottom: 2px solid black;
+	 }
+	}
+
+
+@media(max-width: 500px){
+
+.container {
+	width: auto;
+}
+	.navigation {
+	display: flex;
+	flex-direction: column;
+	position: none;
+}
+
+.navigation a {
+	width: auto;
+	text-align: center;
+	
+}
+.navigation a::selection {
+	color: black;
+}
+button {
+	margin-top: 20px;
+	border: 2px solid black;
+	width: 177px;
+}
+.first-section {
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 0px;
+padding-top: 20px;
+}
+
+#mobile {
+	border: 2px solid lightgrey;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+#mobile-0 {
+	border: 2px solid lightgrey;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+#mobile-1 {
+	border: 2px solid lightgrey;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+#mobile-2 {
+	border: 2px solid lightgrey;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+#mobile-3 {
+	border: 2px solid lightgrey;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+#mobile-4 {
+	border: 2px solid lightgrey;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+.second-section {
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	padding-top: 18px;
+}	
+
+.box3 {
+	margin-right: 35px;
+}
+#main .slogan {
+	font-size: 3.8rem;
+	width: 89%;
+	text-align: center;
+	margin-right: 38%;
+
+}
+
+.logo {
+	top: 2%;
+	margin-left: -12%;
+}
+
+
+#main {
+	padding-top: 0;
+}
 }
